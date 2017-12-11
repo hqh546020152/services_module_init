@@ -89,10 +89,10 @@ cicd_docker_compose
 #安装ansible
 cicd_docker_ansible
 #安装mysql
-#cicd_mysql
+cicd_mysql
 #安装redis
-#cicd_redis
+cicd_redis
 #安装nginx
-#cicd_nginx
+cicd_nginx
 #安装git
 cicd_git
