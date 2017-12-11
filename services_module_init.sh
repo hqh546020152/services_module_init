@@ -27,7 +27,7 @@ cicd_docker_compose(){
         	pip install docker-compose
 	else
         	yum -y install epel-release
-        	yum install python-pip
+        	yum install python-pip -y
         	pip install --upgrade pip
         	pip install docker-compose
 	fi
@@ -89,10 +89,10 @@ cicd_docker_compose
 #安装ansible
 cicd_docker_ansible
 #安装mysql
-cicd_mysql
+#cicd_mysql
 #安装redis
-cicd_redis
+#cicd_redis
 #安装nginx
-cicd_nginx
+#cicd_nginx
 #安装git
 cicd_git
