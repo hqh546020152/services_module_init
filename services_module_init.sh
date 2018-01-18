@@ -24,12 +24,14 @@ cicd_docker_compose(){
 	[ $? -eq 0 ] && echo "docker-compose安装完毕" && return 0
 	pip -V  &> /dev/null
 	if [ $? -eq 0 ];then
-        	pip install docker-compose
+		pip install docker-compose==1.17.1
+        	#pip install docker-compose
 	else
         	yum -y install epel-release
         	yum install python-pip -y
         	pip install --upgrade pip
-        	pip install docker-compose
+        	#pip install docker-compose
+		pip install docker-compose==1.17.1
 	fi
 	docker-compose --version &> /dev/null
 	if [ $? -eq 0 ];then
